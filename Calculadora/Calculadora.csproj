@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Classes\ClDivisao.cs" />
     <Compile Include="Classes\ClMultiplicao.cs" />
-    <Compile Include="Classes\ClResta.cs" />
     <Compile Include="Classes\ClSoma.cs" />
     <Compile Include="Calculadora.cs">
       <SubType>Form</SubType>
@@ -56,6 +55,7 @@
     <Compile Include="Calculadora.Designer.cs">
       <DependentUpon>Calculadora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Clsubtracao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Calculadora.resx">

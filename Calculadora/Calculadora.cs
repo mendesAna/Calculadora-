@@ -25,7 +25,7 @@ namespace Calculadora
 
         // Classes criadas 
         Classes.ClSoma obj = new Classes.ClSoma();
-        Classes.ClResta obj2 = new Classes.ClResta();
+        Classes.Clsubtracao  obj2 = new Classes.Clsubtracao();
         Classes.ClMultiplicao obj3 = new Classes.ClMultiplicao();
         Classes.ClDivisao obj4 = new Classes.ClDivisao();
 
@@ -93,7 +93,7 @@ namespace Calculadora
         private void btnsoma_Click(object sender, EventArgs e)
         {
             operador = "+";
-            primeiro = double.analisar(tbxScreen.Text);
+            primeiro = double.Parse(tbxScreen.Text);
             tbxScreen.Clear();
             validar = false;
         }
@@ -101,7 +101,7 @@ namespace Calculadora
         private void bntmenos_Click(object sender, EventArgs e)
         {
             operador = "-";
-            primeiro = double.analisar(tbxScreen.Text);
+            primeiro = double.Parse(tbxScreen.Text);
             tbxScreen.Clear();
             validar = false;
         }
@@ -109,14 +109,14 @@ namespace Calculadora
         private void btnmultiplicacao_Click(object sender, EventArgs e)
         {
             operador = "*";
-            primeiro = double.analisar(tbxScreen.Text);
+            primeiro = double.Parse(tbxScreen.Text);
             tbxScreen.Clear();
         }
 
         private void btndivisao_Click(object sender, EventArgs e)
         {
             operador = "/";
-            primeiro = double.analisar(tbxScreen.Text);
+            primeiro = double.Parse(tbxScreen.Text);
             tbxScreen.Clear();
         }
 
@@ -125,7 +125,7 @@ namespace Calculadora
             segundo = double.Parse(tbxScreen.Text);
             
             double Som;
-            double Res;
+            double Su;
             double Mul;
             double Div; 
             switch(operador)
@@ -135,8 +135,8 @@ namespace Calculadora
                     tbxScreen.Text = Som.ToString();
                     break;
                 case "-":
-                    Res = obj2.Resta((primeiro), (segundo));
-                    tbxScreen.Text = Res.ToString();
+                    Su = obj2.subtracao((primeiro), (segundo));
+                    tbxScreen.Text = Su.ToString();
                     break;
                 case "*":
                     Mul = obj3.Multiplicao((primeiro), (segundo));

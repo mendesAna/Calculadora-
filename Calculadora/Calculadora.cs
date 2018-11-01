@@ -93,7 +93,7 @@ namespace Calculadora
         private void btnsoma_Click(object sender, EventArgs e)
         {
             operador = "+";
-            primeiro = double.Parse(tbxScreen.Text);
+            primeiro = double.analisar(tbxScreen.Text);
             tbxScreen.Clear();
             validar = false;
         }
@@ -101,7 +101,7 @@ namespace Calculadora
         private void bntmenos_Click(object sender, EventArgs e)
         {
             operador = "-";
-            primeiro = double.Parse(tbxScreen.Text);
+            primeiro = double.analisar(tbxScreen.Text);
             tbxScreen.Clear();
             validar = false;
         }
@@ -109,14 +109,14 @@ namespace Calculadora
         private void btnmultiplicacao_Click(object sender, EventArgs e)
         {
             operador = "*";
-            primeiro = double.Parse(tbxScreen.Text);
+            primeiro = double.analisar(tbxScreen.Text);
             tbxScreen.Clear();
         }
 
         private void btndivisao_Click(object sender, EventArgs e)
         {
             operador = "/";
-            primeiro = double.Parse(tbxScreen.Text);
+            primeiro = double.analisar(tbxScreen.Text);
             tbxScreen.Clear();
         }
 

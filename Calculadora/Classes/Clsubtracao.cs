@@ -12,7 +12,7 @@ namespace Calculadora.Classes
         {
             double Su;
             Su = N1 - N2;
-            return R;
+            return Su;
         }
     }
 }
